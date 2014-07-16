@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>visual branch bootstrap - fabric</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Le styles -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/application.css" rel="stylesheet">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        </a> <a class="brand" href="#">Explorations in Bootstrap.js and Fabric.js</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <canvas id="canvas" height="500" width="500" style="border: 1px solid #ccc">
+      <div id="popover_content" style="display: none">
+        <div class="btn-group">
+          <button id="node-new" onclick="app.node.action.addNode(event)" class="btn btn-primary">New</button>
+          <button id="node-edit" onclick="app.node.action.editNode(event)" class="btn" style="display: inline">Edit</button>
+          <button id="node-merge" onclick="app.node.action.mergeNode(event)" class="btn" style="display: none">Merge</button>
+          <button id="node-delete" onclick="app.node.action.deleteNode(event)" class="btn">Delete</button>
+        </div>
+      </div>
+    </canvas>
+
+    <footer>
+      <p>&copy; clintronx 2013</p>
+    </footer>
+
+  </div>
+  <!-- /container -->
+
+  <!-- Le javascript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="lib/bootstrap.js"></script>
+  <script src="lib/all.min.js"></script>
+  <script src="src/app.js"></script>
+  <script src="src/app.util.js"></script>
+  <script src="src/app.fabric.js"></script>
+  <script src="src/app.fabric.util.js"></script>
+  <script src="src/app.node.js"></script>
+  <script src="src/app.node.pop.js"></script>
+  <script src="src/app.node.util.js"></script>
+  <script src="src/app.node.action.js"></script>
+  <script src="src/demo.js"></script>
+</body>
+</html>
+
